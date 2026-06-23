@@ -1085,3 +1085,164 @@ select:focus {
 #diva-final-reveal {
   padding-bottom: 180px;
 }
+/* ====== Mobile Responsive Fix ====== */
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 12px;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    padding: 22px 16px;
+    border-radius: 14px;
+  }
+
+  .quiz-header h1 {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .quiz-header .subtitle {
+    font-size: 13.5px;
+    text-align: right;
+  }
+
+  .q-label {
+    font-size: 14px;
+  }
+
+  select {
+    font-size: 14px;
+  }
+
+  #universe {
+    height: 100dvh;
+    min-height: 100dvh;
+    padding: 20px 14px;
+  }
+
+  #special-star {
+    width: 20px;
+    height: 20px;
+  }
+
+  #star-date {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  #message-box {
+    max-width: 100%;
+    margin-top: 22px;
+    padding: 0 10px;
+  }
+
+  #message-box h2 {
+    font-size: 22px;
+  }
+
+  #message-box p {
+    font-size: 14.5px;
+    line-height: 1.9;
+  }
+
+  #start-journey-btn {
+    margin-top: 22px;
+    padding: 11px 24px;
+    font-size: 15px;
+  }
+
+  #diva-story-page {
+    height: 100dvh;
+    min-height: 100dvh;
+  }
+
+  .story-universe {
+    padding: 26px 14px 80px;
+    min-height: 100dvh;
+  }
+
+  #story-star-scene {
+    min-height: 100dvh;
+  }
+
+  #diva-white-star {
+    width: 30px;
+    height: 30px;
+  }
+
+  #click-star-text {
+    font-size: 18px;
+    margin-top: 28px;
+  }
+
+  #diva-story-content {
+    padding: 25px 0 80px;
+    max-width: 100%;
+  }
+
+  .story-title {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+
+  .story-subtitle {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .story-card {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 20px 16px;
+    border-radius: 22px;
+  }
+
+  .story-image {
+    height: 210px;
+  }
+
+  .story-goddess {
+    font-size: 82px;
+  }
+
+  .story-moon {
+    width: 58px;
+    height: 58px;
+  }
+
+  .story-small-star {
+    font-size: 28px;
+  }
+
+  .story-text h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .story-text p {
+    font-size: 15px;
+    line-height: 2;
+    text-align: center;
+    min-height: auto;
+  }
+
+  #diva-final-reveal {
+    margin: 50px auto 90px;
+    padding: 24px 12px 140px;
+  }
+
+  #final-line-1,
+  #final-line-2 {
+    font-size: 21px;
+    line-height: 2;
+  }
+
+  #final-date {
+    font-size: 36px;
+    letter-spacing: 3px;
+  }
+}
