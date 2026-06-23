@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
             startCosmicExplosion();
 
             setTimeout(() => {
-                generateExplodingStars(180);
+                const starCount = window.innerWidth <= 600 ? 55 : 180;
+                generateExplodingStars(starCount);
             }, 1200);
 
             setTimeout(() => {
@@ -208,64 +209,64 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function startFinalReveal() {
-  const finalReveal = document.getElementById('diva-final-reveal');
-  const finalLine1 = document.getElementById('final-line-1');
-  const finalDate = document.getElementById('final-date');
-  const finalLine2 = document.getElementById('final-line-2');
-  const divaStoryPage = document.getElementById('diva-story-page');
+        const finalReveal = document.getElementById('diva-final-reveal');
+        const finalLine1 = document.getElementById('final-line-1');
+        const finalDate = document.getElementById('final-date');
+        const finalLine2 = document.getElementById('final-line-2');
+        const divaStoryPage = document.getElementById('diva-story-page');
 
-  if (!finalReveal || !finalLine1 || !finalDate || !finalLine2) return;
+        if (!finalReveal || !finalLine1 || !finalDate || !finalLine2) return;
 
-  finalLine1.textContent = '';
-  finalDate.textContent = '';
-  finalLine2.textContent = '';
+        finalLine1.textContent = '';
+        finalDate.textContent = '';
+        finalLine2.textContent = '';
 
-  finalReveal.classList.remove('hidden');
+        finalReveal.classList.remove('hidden');
 
-  setTimeout(() => {
-    finalReveal.classList.add('visible');
+        setTimeout(() => {
+            finalReveal.classList.add('visible');
 
-    scrollDivaToBottom();
-
-    typeText(
-      finalLine1,
-      'لكن الرومان لم يعرفوا أن نجمة الديفا ستولد مرة أخرى...',
-      45,
-      () => {
-        scrollDivaToBottom();
-
-        typeText(
-          finalDate,
-          '26 / 7 / 1994',
-          120,
-          () => {
             scrollDivaToBottom();
 
             typeText(
-              finalLine2,
-              'وقد وُلدت بالفعل ✨',
-              70,
-              () => {
-                scrollDivaToBottom();
-              }
-            );
-          }
-        );
-      }
-    );
-  }, 700);
+                finalLine1,
+                'لكن الرومان لم يعرفوا أن نجمة الديفا ستولد مرة أخرى...',
+                45,
+                () => {
+                    scrollDivaToBottom();
 
-  function scrollDivaToBottom() {
-    setTimeout(() => {
-      if (divaStoryPage) {
-        divaStoryPage.scrollTo({
-          top: divaStoryPage.scrollHeight,
-          behavior: 'smooth'
-        });
-      }
-    }, 300);
-  }
-}
+                    typeText(
+                        finalDate,
+                        '26 / 7 / 1994',
+                        120,
+                        () => {
+                            scrollDivaToBottom();
+
+                            typeText(
+                                finalLine2,
+                                'وقد وُلدت بالفعل ✨',
+                                70,
+                                () => {
+                                    scrollDivaToBottom();
+                                }
+                            );
+                        }
+                    );
+                }
+            );
+        }, 700);
+
+        function scrollDivaToBottom() {
+            setTimeout(() => {
+                if (divaStoryPage) {
+                    divaStoryPage.scrollTo({
+                        top: divaStoryPage.scrollHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            }, 300);
+        }
+    }
 
     function typeText(element, text, speed, callback) {
         if (!element) return;

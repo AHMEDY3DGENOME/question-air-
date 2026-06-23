@@ -1246,3 +1246,69 @@ select:focus {
     letter-spacing: 3px;
   }
 }
+/* ====== Performance Fix للموبايل ====== */
+
+@media (max-width: 600px) {
+
+  #bigbang-flash.explode {
+    animation-duration: 3.2s !important;
+  }
+
+  #nebula-cloud,
+  #shockwave {
+    display: none !important;
+  }
+
+  .exploding-star {
+    box-shadow: none !important;
+  }
+
+  #stars-container {
+    opacity: 0.65;
+  }
+
+  #special-star,
+  #diva-white-star,
+  #final-date {
+    filter: none !important;
+  }
+
+  #special-star {
+    box-shadow:
+      0 0 14px 5px #ffe9a8 !important;
+  }
+
+  #diva-white-star {
+    box-shadow:
+      0 0 18px 7px rgba(255,255,255,0.9),
+      0 0 42px 16px rgba(220,240,255,0.45) !important;
+  }
+
+  #bigbang-flash {
+    box-shadow:
+      0 0 25px 10px rgba(255,255,255,0.9),
+      0 0 55px 20px rgba(255,159,67,0.55) !important;
+  }
+
+  #nebula-cloud.active {
+    animation: none !important;
+  }
+
+  .story-stars {
+    animation-duration: 90s !important;
+    opacity: 0.45 !important;
+  }
+
+  .story-goddess,
+  .story-small-star,
+  #click-star-text,
+  #final-date {
+    animation-duration: 4s !important;
+  }
+
+  .story-card {
+    backdrop-filter: none !important;
+    box-shadow:
+      0 0 18px rgba(255,255,255,0.06) !important;
+  }
+}
