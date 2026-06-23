@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>استبيان حول تدريس الفيزياء</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="quiz-section" class="container">
+
+    <header class="quiz-header">
+      <h1>استبيان حول تدريس الفيزياء وتطوير المناهج</h1>
+      <p class="subtitle">
+        يهدف هذا الاستبيان إلى جمع آراء وملاحظات حول أساليب تدريس مادة الفيزياء
+        والتحديات التي تواجه المعلمين والطلاب، بما يساعد في تطوير طرق التدريس
+        والمناهج المستقبلية. يستغرق إكمال الاستبيان دقيقتين تقريبًا، وجميع الإجابات
+        تُستخدم لأغراض تحسين العملية التعليمية فقط.
+      </p>
+    </header>
+
+    <form id="quiz-form">
+
+      <div class="question">
+        <label class="q-label">1. ما هو الفرع الذي تفضلين تدريسه أكثر في الفيزياء؟</label>
+        <select name="q1">
+          <option value="mechanics">الميكانيكا</option>
+          <option value="electricity">الكهرباء والمغناطيسية</option>
+          <option value="optics">الضوء والبصريات</option>
+          <option value="thermo">الحرارة والديناميكا الحرارية</option>
+          <option value="modern">الفيزياء الحديثة</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label class="q-label">2. ما أكثر وسيلة تجدينها فعّالة في شرح المفاهيم الصعبة؟</label>
+        <select name="q2">
+          <option value="experiments">التجارب العملية</option>
+          <option value="visuals">الرسوم والمحاكاة المرئية</option>
+          <option value="examples">الأمثلة من الحياة اليومية</option>
+          <option value="discussion">النقاش الجماعي داخل الفصل</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label class="q-label">3. في رأيك، ما أكبر تحدٍ يواجه طلاب الفيزياء حاليًا؟</label>
+        <select name="q3">
+          <option value="math">الخلفية الرياضية الضعيفة</option>
+          <option value="abstract">صعوبة تخيل المفاهيم المجردة</option>
+          <option value="motivation">قلة الدافع نحو المادة</option>
+          <option value="time">ضيق وقت المنهج</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label class="q-label">4. هل تعتقدين أن المنهج الحالي يحتاج إلى تطوير؟</label>
+        <select name="q4">
+          <option value="yes_major">نعم، بشكل كبير</option>
+          <option value="yes_minor">نعم، لكن بتعديلات بسيطة</option>
+          <option value="no">لا، المنهج مناسب كما هو</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label class="q-label">5. ما مدى استخدامك للتقنية والمحاكاة الرقمية في الشرح؟</label>
+        <select name="q5">
+          <option value="always">بشكل دائم</option>
+          <option value="sometimes">من وقت لآخر</option>
+          <option value="rarely">نادرًا</option>
+          <option value="never">لا أستخدمها</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label class="q-label">6. أي من هذه المهارات تركزين عليها أكثر مع الطلاب؟</label>
+        <select name="q6">
+          <option value="problem_solving">حل المشكلات</option>
+          <option value="conceptual">الفهم المفاهيمي العميق</option>
+          <option value="application">تطبيق القوانين على مسائل واقعية</option>
+          <option value="critical">التفكير النقدي والتحليل</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label class="q-label">7. كيف تقيّمين مستوى تفاعل الطلاب في حصص الفيزياء؟</label>
+        <select name="q7">
+          <option value="high">مرتفع</option>
+          <option value="medium">متوسط</option>
+          <option value="low">منخفض</option>
+        </select>
+      </div>
+
+      <button type="submit" id="submit-btn">إرسال الإجابات</button>
+
+    </form>
+  </div>
+
+  <div id="surprise-section" class="hidden">
+
+    <div id="universe">
+
+      <div id="bigbang-flash"></div>
+      <div id="shockwave"></div>
+      <div id="nebula-cloud"></div>
+
+      <div id="stars-container"></div>
+
+      <div id="special-star-wrap" class="hidden">
+        <div id="special-star"></div>
+        <p id="star-date"></p>
+      </div>
+
+      <div id="message-box" class="hidden">
+        <p id="intro-text" class="reveal-note typing-text"></p>
+        <h2 id="birthday-title"></h2>
+        <p id="birthday-message" class="typing-text"></p>
+      </div>
+
+      <button id="start-journey-btn" class="hidden">ابدأ الرحلة</button>
+
+      <!-- صفحة حكاية الديفا -->
+      <div id="diva-story-page" class="hidden">
+
+        <div class="story-universe">
+
+          <div class="story-stars"></div>
+
+          <div id="story-star-scene">
+            <div id="diva-white-star"></div>
+            <p id="click-star-text">اضغطي هنا ✨</p>
+          </div>
+
+          <div id="diva-story-content" class="hidden">
+
+            <h1 class="story-title">✦ حكاية الديفا ✦</h1>
+            <h3 class="story-subtitle">الأسطورة الرومانية</h3>
+
+            <div class="story-card">
+
+              <div class="story-image">
+                <div class="story-moon"></div>
+                <div class="story-goddess">♕</div>
+                <div class="story-small-star">✦</div>
+              </div>
+
+              <div class="story-text">
+
+                <h2>من هي الديفا؟</h2>
+                <p id="story-part-1"></p>
+
+                <h2>كيف ظهرت في الكون؟</h2>
+                <p id="story-part-2"></p>
+
+                <h2>لماذا سُمّيت نجمة الديفا؟</h2>
+                <p id="story-part-3"></p>
+
+              </div>
+
+            </div>
+
+            <!-- النهاية السينمائية -->
+            <div id="diva-final-reveal" class="hidden">
+              <p id="final-line-1"></p>
+              <p id="final-date"></p>
+              <p id="final-line-2"></p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
